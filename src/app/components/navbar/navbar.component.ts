@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { IOptsNavbar } from 'src/app/interfaces/IOptsNavbar';
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  tituloNav: string = 'Aplicacion Angular';
+  public tituloNav: string = 'Aplicacion Angular';
 
+  public opciones: IOptsNavbar [] = [
+    { path: '/home', name: 'Home'},
+    { path: '/depositos', name: 'Depositos'},
+    { path: '/prestamos', name: 'Prestamos'},
+    { path: '/giros', name: 'Giros'},
+    { path: '/cta-corriente', name: 'Cuenta Corriente'},
+  ];
 }
