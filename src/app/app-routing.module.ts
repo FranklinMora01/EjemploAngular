@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'depositos', component: DepositosComponent},
   { path: 'prestamos', component: PrestamosComponent},
   { path: 'giros', component: GirosComponent},
-  { path: 'cta-corriente', component: CtaCorrienteComponent}
+  { path: 'cta-corriente', component: CtaCorrienteComponent},
+  { path: '**', redirectTo: 'home'}   //redirige las paginas que no existe al home
 ];
 
 @NgModule({
