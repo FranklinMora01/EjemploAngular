@@ -1,1 +1,16 @@
-<p>home works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th *ngFor="let header of headerTable">{{ header }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ saldo }}</td>
+            <td>{{ estado }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<app-button [optBtn]="opcionesBtnAumentar"></app-button>
+<app-button [optBtn]="opcionesBtnDisminuir"></app-button>

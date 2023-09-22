@@ -9,6 +9,7 @@ import { DepositosComponent } from './pages/depositos/depositos.component';
 import { PrestamosComponent } from './pages/prestamos/prestamos.component';
 import { GirosComponent } from './pages/giros/giros.component';
 import { CtaCorrienteComponent } from './pages/cta-corriente/cta-corriente.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CtaCorrienteComponent } from './pages/cta-corriente/cta-corriente.compo
     DepositosComponent,
     PrestamosComponent,
     GirosComponent,
-    CtaCorrienteComponent
+    CtaCorrienteComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
