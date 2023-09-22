@@ -26,4 +26,25 @@ export class HomeComponent {
     titleBtn: 'Disminuir Saldo'
   }
 
+  opcionesBtnEstado = {
+    color: 'btn btn-warning',
+    titleBtn: 'Cambiar Estado'
+  }
+
+  constructor () {}
+
+  public aumentarSaldo() {
+    this.saldo += 1000;
+  }
+
+  public disminuirSaldo() {
+    this.saldo -= 1000;
+  }
+
+  public cambiarEstado() {
+    this.status = !this.status;
+    this.estado = this.status? 'Activo': 'Inactivo';
+
+  }
+
 }
